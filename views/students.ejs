@@ -1,14 +1,37 @@
 <!DOCTYPE html>
 <html>
-<head>
+  <head>
     <title><%= title %></title>
-</head>
-<body>
-    <h1><%= message %></h1>
+    <link rel="stylesheet" href="/stylesheets/style.css" />
+    <link rel="stylesheet" href="/stylesheets/students.css" />
+  </head>
+  <body>
+    <h1 class="title"><%= message %></h1>
+    <ul class="nav-list">
+      <li class="list-item">
+        <a href="/" class="list-link">Go to Main Page</a>
+      </li>
+      <li class="list-item">
+        <a href="/students" class="list-link">Students</a>
+      </li>
+      <li class="list-item">
+        <a href="/students/sofia" class="list-link">Sofia</a>
+      </li>
+      <li class="list-item">
+        <a href="/students/oleh" class="list-link">Oleh</a>
+      </li>
+      <li class="list-item">
+        <a href="/students/vladyslav" class="list-link">Vladyslav</a>
+      </li>
+      <li class="list-item">
+        <a href="/students/maxim" class="list-link">Maxim</a>
+      </li>
+    </ul>
     <% if (img) { %>
-        <img src="<%= img %>" alt="Student Image">
+    <img class="image" src="<%= img %>" alt="Students Image" />
+    <br />
     <% } else { %>
-        <h2>Image Not Found</h2>
+    <h2>Image Not Found</h2>
     <% } %>
-</body>
+  </body>
 </html>
